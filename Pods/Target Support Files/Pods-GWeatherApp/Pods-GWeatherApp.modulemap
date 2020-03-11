@@ -1,0 +1,6 @@
+module Pods_GWeatherApp {
+  umbrella header "Pods-GWeatherApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

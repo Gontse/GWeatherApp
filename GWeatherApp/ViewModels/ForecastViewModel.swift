@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+struct ForecastViewModel {
+    
+    var dayOfWeek: String?
+    var description: String?
+    var temperature : Double?
+    
+    
+    
+
+}
+
+
+
+

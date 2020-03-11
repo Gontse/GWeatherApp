@@ -7,3 +7,11 @@
 //
 
 import Foundation
+@testable import GWeatherApp
+
+class GWALocationAuthorizationDelegateMock : GWALocationAuthorizationDelegate {
+    var authorizationWasDenied = false
+    func authorizationDenied(for locationAuthorization: GWALocationAuthorization) {
+        authorizationWasDenied = true
+    }
+}

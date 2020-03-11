@@ -7,14 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DBF436F27D466D491322637 /* libPods-GWeatherApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F6A79FAB2EF14529AE34DD /* libPods-GWeatherApp.a */; };
 		AA47027C241502070043F98C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA47027B241502070043F98C /* AppDelegate.swift */; };
-		AA47027E241502070043F98C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA47027D241502070043F98C /* SceneDelegate.swift */; };
-		AA470280241502070043F98C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA47027F241502070043F98C /* ViewController.swift */; };
 		AA470283241502070043F98C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA470281241502070043F98C /* Main.storyboard */; };
 		AA470285241502090043F98C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA470284241502090043F98C /* Assets.xcassets */; };
 		AA470288241502090043F98C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA470286241502090043F98C /* LaunchScreen.storyboard */; };
 		AA4702932415020A0043F98C /* GWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4702922415020A0043F98C /* GWeatherAppTests.swift */; };
 		AA47029E2415020A0043F98C /* GWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA47029D2415020A0043F98C /* GWeatherAppUITests.swift */; };
+		AA4702AD2415033F0043F98C /* GWALocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4702AC2415033F0043F98C /* GWALocationManager.swift */; };
+		AA4702AF241507CD0043F98C /* GWALocationAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4702AE241507CD0043F98C /* GWALocationAuthorization.swift */; };
+		AA4702B1241513C60043F98C /* GWALocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4702B0241513C60043F98C /* GWALocationProvider.swift */; };
+		AA4702B424151C210043F98C /* GWAWeatherProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4702B324151C210043F98C /* GWAWeatherProvider.swift */; };
+		AA4702B724151CA90043F98C /* ServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4702B624151CA90043F98C /* ServiceHelper.swift */; };
+		AA4702BA241523000043F98C /* CurrentWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4702B9241523000043F98C /* CurrentWeatherModel.swift */; };
+		AA4702BC2415ABDC0043F98C /* MainAssebler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4702BB2415ABDC0043F98C /* MainAssebler.swift */; };
+		AA4702BF2415B5DB0043F98C /* GWALocationManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4702BE2415B5DB0043F98C /* GWALocationManagerMock.swift */; };
+		AA4702C12415B7C60043F98C /* GWALocationAuthorizationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4702C02415B7C60043F98C /* GWALocationAuthorizationMock.swift */; };
+		AA4702C32415B88A0043F98C /* GWALocationAuthorizationDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4702C22415B88A0043F98C /* GWALocationAuthorizationDelegateMock.swift */; };
+		AA4702C52415B93D0043F98C /* GWALocationProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4702C42415B93D0043F98C /* GWALocationProviderMock.swift */; };
+		AA4702C72415BA980043F98C /* GWALocationConsumerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4702C62415BA980043F98C /* GWALocationConsumerMock.swift */; };
+		AA4702CA2415BC010043F98C /* GWALocationAuthorizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4702C92415BC010043F98C /* GWALocationAuthorizationTests.swift */; };
+		AA4702DE241682680043F98C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4702DD241682680043F98C /* MainViewController.swift */; };
+		AA6166A22416D4810084BBA1 /* CurrentWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6166A12416D4810084BBA1 /* CurrentWeatherViewModel.swift */; };
+		AA6166A52417313D0084BBA1 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6166A42417313D0084BBA1 /* ForecastTableViewCell.swift */; };
+		AA6166A72417322B0084BBA1 /* ForecastWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6166A62417322B0084BBA1 /* ForecastWeatherModel.swift */; };
+		AA6166B02417EEAE0084BBA1 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6166AF2417EEAE0084BBA1 /* ForecastViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +52,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		55AA101AE217ACD755A89ED2 /* Pods-GWeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GWeatherApp.release.xcconfig"; path = "Target Support Files/Pods-GWeatherApp/Pods-GWeatherApp.release.xcconfig"; sourceTree = "<group>"; };
+		59F6A79FAB2EF14529AE34DD /* libPods-GWeatherApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GWeatherApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E5C8699597410FA23A1EEBD /* Pods-GWeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GWeatherApp.debug.xcconfig"; path = "Target Support Files/Pods-GWeatherApp/Pods-GWeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AA470278241502070043F98C /* GWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA47027B241502070043F98C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA47027D241502070043F98C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AA47027F241502070043F98C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA470282241502070043F98C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA470284241502090043F98C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA470287241502090043F98C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +67,24 @@
 		AA4702992415020A0043F98C /* GWeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GWeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA47029D2415020A0043F98C /* GWeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWeatherAppUITests.swift; sourceTree = "<group>"; };
 		AA47029F2415020A0043F98C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA4702AC2415033F0043F98C /* GWALocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWALocationManager.swift; sourceTree = "<group>"; };
+		AA4702AE241507CD0043F98C /* GWALocationAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWALocationAuthorization.swift; sourceTree = "<group>"; };
+		AA4702B0241513C60043F98C /* GWALocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWALocationProvider.swift; sourceTree = "<group>"; };
+		AA4702B324151C210043F98C /* GWAWeatherProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWAWeatherProvider.swift; sourceTree = "<group>"; };
+		AA4702B624151CA90043F98C /* ServiceHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHelper.swift; sourceTree = "<group>"; };
+		AA4702B9241523000043F98C /* CurrentWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherModel.swift; sourceTree = "<group>"; };
+		AA4702BB2415ABDC0043F98C /* MainAssebler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssebler.swift; sourceTree = "<group>"; };
+		AA4702BE2415B5DB0043F98C /* GWALocationManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWALocationManagerMock.swift; sourceTree = "<group>"; };
+		AA4702C02415B7C60043F98C /* GWALocationAuthorizationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWALocationAuthorizationMock.swift; sourceTree = "<group>"; };
+		AA4702C22415B88A0043F98C /* GWALocationAuthorizationDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWALocationAuthorizationDelegateMock.swift; sourceTree = "<group>"; };
+		AA4702C42415B93D0043F98C /* GWALocationProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWALocationProviderMock.swift; sourceTree = "<group>"; };
+		AA4702C62415BA980043F98C /* GWALocationConsumerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWALocationConsumerMock.swift; sourceTree = "<group>"; };
+		AA4702C92415BC010043F98C /* GWALocationAuthorizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWALocationAuthorizationTests.swift; sourceTree = "<group>"; };
+		AA4702DD241682680043F98C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AA6166A12416D4810084BBA1 /* CurrentWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewModel.swift; sourceTree = "<group>"; };
+		AA6166A42417313D0084BBA1 /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
+		AA6166A62417322B0084BBA1 /* ForecastWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastWeatherModel.swift; sourceTree = "<group>"; };
+		AA6166AF2417EEAE0084BBA1 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DBF436F27D466D491322637 /* libPods-GWeatherApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +113,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		039D2DA58874719028B2A293 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59F6A79FAB2EF14529AE34DD /* libPods-GWeatherApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AA47026F241502070043F98C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +128,8 @@
 				AA4702912415020A0043F98C /* GWeatherAppTests */,
 				AA47029C2415020A0043F98C /* GWeatherAppUITests */,
 				AA470279241502070043F98C /* Products */,
+				CBCC0FBF513DE32B65C0571E /* Pods */,
+				039D2DA58874719028B2A293 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +146,19 @@
 		AA47027A241502070043F98C /* GWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				AA4702DC241682350043F98C /* ViewControllers */,
+				AA6166A324172F570084BBA1 /* UIViews */,
+				AA6166A02416D45C0084BBA1 /* ViewModels */,
+				AA4702B8241522C40043F98C /* Models */,
+				AA4702B524151C310043F98C /* Service */,
+				AA4702B224151C040043F98C /* Weather */,
+				AA4702AB241502160043F98C /* Location */,
 				AA47027B241502070043F98C /* AppDelegate.swift */,
-				AA47027D241502070043F98C /* SceneDelegate.swift */,
-				AA47027F241502070043F98C /* ViewController.swift */,
 				AA470281241502070043F98C /* Main.storyboard */,
 				AA470284241502090043F98C /* Assets.xcassets */,
 				AA470286241502090043F98C /* LaunchScreen.storyboard */,
 				AA470289241502090043F98C /* Info.plist */,
+				AA4702BB2415ABDC0043F98C /* MainAssebler.swift */,
 			);
 			path = GWeatherApp;
 			sourceTree = "<group>";
@@ -113,6 +166,8 @@
 		AA4702912415020A0043F98C /* GWeatherAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				AA4702C82415BB760043F98C /* Location */,
+				AA4702BD2415B5BE0043F98C /* Mocks */,
 				AA4702922415020A0043F98C /* GWeatherAppTests.swift */,
 				AA4702942415020A0043F98C /* Info.plist */,
 			);
@@ -128,6 +183,95 @@
 			path = GWeatherAppUITests;
 			sourceTree = "<group>";
 		};
+		AA4702AB241502160043F98C /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				AA4702AC2415033F0043F98C /* GWALocationManager.swift */,
+				AA4702AE241507CD0043F98C /* GWALocationAuthorization.swift */,
+				AA4702B0241513C60043F98C /* GWALocationProvider.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		AA4702B224151C040043F98C /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				AA4702B324151C210043F98C /* GWAWeatherProvider.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		AA4702B524151C310043F98C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AA4702B624151CA90043F98C /* ServiceHelper.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AA4702B8241522C40043F98C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA4702B9241523000043F98C /* CurrentWeatherModel.swift */,
+				AA6166A62417322B0084BBA1 /* ForecastWeatherModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA4702BD2415B5BE0043F98C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				AA4702BE2415B5DB0043F98C /* GWALocationManagerMock.swift */,
+				AA4702C02415B7C60043F98C /* GWALocationAuthorizationMock.swift */,
+				AA4702C22415B88A0043F98C /* GWALocationAuthorizationDelegateMock.swift */,
+				AA4702C42415B93D0043F98C /* GWALocationProviderMock.swift */,
+				AA4702C62415BA980043F98C /* GWALocationConsumerMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		AA4702C82415BB760043F98C /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				AA4702C92415BC010043F98C /* GWALocationAuthorizationTests.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		AA4702DC241682350043F98C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA4702DD241682680043F98C /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AA6166A02416D45C0084BBA1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AA6166A12416D4810084BBA1 /* CurrentWeatherViewModel.swift */,
+				AA6166AF2417EEAE0084BBA1 /* ForecastViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AA6166A324172F570084BBA1 /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				AA6166A42417313D0084BBA1 /* ForecastTableViewCell.swift */,
+			);
+			path = UIViews;
+			sourceTree = "<group>";
+		};
+		CBCC0FBF513DE32B65C0571E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E5C8699597410FA23A1EEBD /* Pods-GWeatherApp.debug.xcconfig */,
+				55AA101AE217ACD755A89ED2 /* Pods-GWeatherApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +279,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA4702A22415020A0043F98C /* Build configuration list for PBXNativeTarget "GWeatherApp" */;
 			buildPhases = (
+				9707390DB099571FC7276AA2 /* [CP] Check Pods Manifest.lock */,
 				AA470274241502070043F98C /* Sources */,
 				AA470275241502070043F98C /* Frameworks */,
 				AA470276241502070043F98C /* Resources */,
@@ -254,14 +399,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9707390DB099571FC7276AA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GWeatherApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AA470274241502070043F98C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA470280241502070043F98C /* ViewController.swift in Sources */,
+				AA4702B424151C210043F98C /* GWAWeatherProvider.swift in Sources */,
+				AA4702DE241682680043F98C /* MainViewController.swift in Sources */,
 				AA47027C241502070043F98C /* AppDelegate.swift in Sources */,
-				AA47027E241502070043F98C /* SceneDelegate.swift in Sources */,
+				AA4702BC2415ABDC0043F98C /* MainAssebler.swift in Sources */,
+				AA4702AD2415033F0043F98C /* GWALocationManager.swift in Sources */,
+				AA6166A72417322B0084BBA1 /* ForecastWeatherModel.swift in Sources */,
+				AA4702B1241513C60043F98C /* GWALocationProvider.swift in Sources */,
+				AA4702AF241507CD0043F98C /* GWALocationAuthorization.swift in Sources */,
+				AA6166A22416D4810084BBA1 /* CurrentWeatherViewModel.swift in Sources */,
+				AA6166A52417313D0084BBA1 /* ForecastTableViewCell.swift in Sources */,
+				AA6166B02417EEAE0084BBA1 /* ForecastViewModel.swift in Sources */,
+				AA4702B724151CA90043F98C /* ServiceHelper.swift in Sources */,
+				AA4702BA241523000043F98C /* CurrentWeatherModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +449,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA4702C72415BA980043F98C /* GWALocationConsumerMock.swift in Sources */,
+				AA4702BF2415B5DB0043F98C /* GWALocationManagerMock.swift in Sources */,
+				AA4702C12415B7C60043F98C /* GWALocationAuthorizationMock.swift in Sources */,
+				AA4702CA2415BC010043F98C /* GWALocationAuthorizationTests.swift in Sources */,
 				AA4702932415020A0043F98C /* GWeatherAppTests.swift in Sources */,
+				AA4702C52415B93D0043F98C /* GWALocationProviderMock.swift in Sources */,
+				AA4702C32415B88A0043F98C /* GWALocationAuthorizationDelegateMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +618,7 @@
 		};
 		AA4702A32415020A0043F98C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E5C8699597410FA23A1EEBD /* Pods-GWeatherApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +637,7 @@
 		};
 		AA4702A42415020A0043F98C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55AA101AE217ACD755A89ED2 /* Pods-GWeatherApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

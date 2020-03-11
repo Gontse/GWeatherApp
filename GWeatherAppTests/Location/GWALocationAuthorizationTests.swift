@@ -7,27 +7,34 @@
 //
 
 import XCTest
+@testable import GWeatherApp
 
 class GWALocationAuthorizationTests: XCTestCase {
 
+    var sut: GWALocationAuthorization!
+    
+      var locationManagerMock: GWALocationManagerMock
+    var delegateMock : GWALocationAuthorizationDelegateMock
+    
+
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        locationManagerMock = GWALocationManagerMock
+        delegateMock = GWALocationAuthorizationDelegateMock
+        sut = GWADefaultLocationAuthorization(locationManager: locationManagerMock)
+        sut.delegate = delegateMock
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func test_CheckAutherization_notDeterminedRequestAuthorization(){
+        
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func test_CheckAutherization_determined_doesNotRequestAuthorization(){
+           
+       }
+    
+    func test_DidChangeAuthorizationStatus_authorizeWhenInUse_notificationIsPosted(){
+        
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
+    
 }

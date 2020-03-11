@@ -7,3 +7,27 @@
 //
 
 import Foundation
+@testable import GWeatherApp
+import CoreLocation
+
+class GWALocationManagerMock: GWALocationManager {
+    
+    weak var delegate: GWALocationManagerDelegate?
+    weak var authorizationDelegate: GWALocationManagerAuthorizationDelegate?
+    
+    var requestWhenInUseAuthorization = false
+    var didStartUpdatingLocation = false
+    var didStopUpdatingLOcation = false
+    
+    func requestWhenInUseAuthorization () {
+        requestWhenInUseAuthorization = true
+    }
+    
+    func didStartUpdatingLocation () {
+        didStartUpdatingLocation = true
+    }
+    
+    func didStopUpdatingLOcation () {
+        didStopUpdatingLOcation = true
+    }
+}

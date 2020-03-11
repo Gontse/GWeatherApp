@@ -10,6 +10,18 @@ import UIKit
 
 class ForecastTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var dayOfWeekLabel: UILabel!
+    @IBOutlet weak var descripIcon: UIImageView!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    
+    var forcast : ForecastViewModel! {
+        didSet{
+            dayOfWeekLabel.text = forcast.dayOfWeek
+            descripIcon.image = UIImage(named: "\(forcast.description?.localizedImageDesscription ?? "clear")")
+            temperatureLabel.text = "\(Int(forcast.temperature?.asCelcius ?? 0))º"
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,3 +34,18 @@ class ForecastTableViewCell: UITableViewCell {
     }
 
 }
+
+extension String {
+    var localizedImageDesscription: String? {
+
+              if(self.contains("cloud")){
+                 return "partlysunny"
+              }else if ( self.contains("rain")){
+                 return "rain"
+              }else{
+                  return "clear"
+              }
+          }
+}
+
+

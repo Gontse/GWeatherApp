@@ -7,3 +7,14 @@
 //
 
 import Foundation
+@testable import GWeatherApp
+import CoreLocation
+
+
+class GWALocationProviderMock : GWALocationProvider  {
+    var lastConsumer : GWALocationConsumer?
+    
+    func add(_ consumer: GWALocationConsumber) {
+        lastConsumer = consumer
+    }
+}

@@ -7,3 +7,18 @@
 //
 
 import Foundation
+@testable import GWeatherApp
+import CoreLocation
+
+
+class GWALocationAuthorizationMock: GWALocationAuthorization {
+    weak var delegate: GWALocationAuthorizationDelegate?
+    
+    var didCheckAuthorization = false
+    
+    func checkAuthorization() {
+        didCheckAuthorization = true
+    }
+    
+    
+}

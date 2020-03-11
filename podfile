@@ -1,0 +1,9 @@
+target 'GWeatherApp'
+
+
+
+pod 'Swinject'
+pod 'SwinjectStoryboard'
+
+
+ 
